@@ -12,4 +12,6 @@ Database connectivity - Previous version used local MySQL database. Decided to g
      
                         Not yet complete
                         
+CSS was very simple first time around. Still relatively simple now, although improved. More to be done.
+
 More to be added -                        
