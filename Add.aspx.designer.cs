@@ -87,6 +87,15 @@ namespace MGD_2._0
         protected global::System.Web.UI.WebControls.Calendar lblCalendar;
 
         /// <summary>
+        /// lstErrors control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lstErrors;
+
+        /// <summary>
         /// txtCodeName control.
         /// </summary>
         /// <remarks>

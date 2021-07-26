@@ -20,6 +20,7 @@
             <div class="label6"> <asp:Label ID="lblAtMotherBase" runat="server" BorderStyle="None" Text="At Motherbase?"></asp:Label></div>
             <div class="label7"> <asp:CheckBox ID="ckdAtMotherBase" runat="server" BorderStyle="None" Text=" "></asp:CheckBox> </div>
             <div class="label8"> <asp:Calendar ID="lblCalendar" runat="server" BorderStyle="None"> </asp:Calendar>    </div>
+            <div class="label9"> <asp:ListBox ID="lstErrors" runat="server" Width="220px"></asp:ListBox></div>
             <!--Elements for textboxes -->
             <div class="textbox1"> <asp:TextBox ID="txtCodeName" runat="server" BorderStyle="Solid" BackColor="White" BorderColor="Black" BorderWidth="2px"></asp:TextBox> </div>
             <div class="textbox2"> <asp:TextBox ID="txtAbilityRank" runat="server" BorderStyle="Solid" BackColor="White" BorderColor="Black" BorderWidth="2px"></asp:TextBox> </div>

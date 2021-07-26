@@ -169,6 +169,17 @@
     top: 375px;
 }
 
+.label9 {
+    float: left;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    border-radius: 0px;
+    position: fixed;
+    top: 375px;
+    left: 450px;
+}
+
 .btnAdd {
     position: fixed;
     top: 300px;
