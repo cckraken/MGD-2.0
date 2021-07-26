@@ -10,7 +10,7 @@ Data validation - The previous data validation method is a long string if-else l
 
 Database connectivity - Previous version used local MySQL database. Decided to go with SQL Server 2019 to expand my skillset.
      
-                        Not yet complete
+                        Added basic SQL Server 2019 database functionality. More work to be done.
                         
 CSS was very simple first time around. Still relatively simple now, although improved. More to be done.
 
