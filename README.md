@@ -14,4 +14,6 @@ Database connectivity - Previous version used local MySQL database. Decided to g
                         
 CSS was very simple first time around. Still relatively simple now, although improved. More to be done.
 
+JavaScript - None used in previous version. Added message box functionality, will be expanded later.
+
 More to be added -                        
