@@ -59,28 +59,35 @@ namespace MGD_2._0
 
             else
             {
-                SqlConnection connection = new SqlConnection("Server=DAN-PC; Database=MGD; Trusted_Connection=True;");
-                connection.Open();
-                SqlCommand command = new SqlCommand("sproc_Add");
-                
-                
-                command.Parameters.AddWithValue("@CodeName", record.CodeName);
-                command.Parameters.AddWithValue("@AbilityRank", record.AbilityRank);
-                command.Parameters.AddWithValue("@Affiliation", record.Affiliation);
-                command.Parameters.AddWithValue("@HairColour", record.HairColour);
-                command.Parameters.AddWithValue("@Ethnicity", record.Ethnicity);
-                command.Parameters.AddWithValue("@AtMotherBase", record.AtMotherBase);
-                command.Parameters.AddWithValue("@DateJoined", record.DateJoined);
+                using (SqlConnection connection = new SqlConnection("Server=DAN-PC; Database=MGD; Trusted_Connection=True;"))
+                {
+                    SqlCommand command = new SqlCommand();
+                    command.Connection = connection;
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.CommandText = "sproc_Add";
 
-                command.ExecuteNonQuery();
-                connection.Close();
-                alert.Show("Operation succesfull");
+
+
+                    command.Parameters.AddWithValue("@CodeName", record.CodeName);
+                    command.Parameters.AddWithValue("@AbilityRank", record.AbilityRank);
+                    command.Parameters.AddWithValue("@Affiliation", record.Affiliation);
+                    command.Parameters.AddWithValue("@HairColour", record.HairColour);
+                    command.Parameters.AddWithValue("@Ethnicity", record.Ethnicity);
+                    command.Parameters.AddWithValue("@AtMotherBase", record.AtMotherBase);
+                    command.Parameters.AddWithValue("@DateJoined", record.DateJoined);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+
+                    connection.Close();
+
+                    alert.Show("Operation succesfull");
+                }
             }
         }
 
         protected void btnBack_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("MainMenu.aspx");
         }
     }
 }
