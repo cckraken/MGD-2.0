@@ -15,9 +15,9 @@
 
            <div class="button"> <asp:Button ID="btnAdd" runat="server" BorderStyle="None" Text="Add" OnClick="btnAdd_Click"></asp:Button> </div>
                 
-           <div class="button"> <asp:Button ID="btnEdit" runat="server" BorderStyle="None" Text="Edit"></asp:Button> </div>
+           <div class="button"> <asp:Button ID="btnEdit" runat="server" BorderStyle="None" Text="Edit" OnClick="btnEdit_Click"></asp:Button> </div>
 
-           <div class="button"> <asp:Button ID="btnDelete" runat="server" BorderStyle="None" Text="Delete"></asp:Button> </div>
+           <div class="button"> <asp:Button ID="btnDelete" runat="server" BorderStyle="None" Text="Delete" OnClick="btnDelete_Click"></asp:Button> </div>
 
            </div>
 

@@ -19,5 +19,15 @@ namespace MGD_2._0
             //Take user to Add page
             Response.Redirect("Add.aspx");
         }
+
+        protected void btnEdit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Edit.aspx");
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Delete.aspx");
+        }
     }
 }

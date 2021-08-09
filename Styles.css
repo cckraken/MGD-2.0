@@ -182,13 +182,29 @@
 
 .btnAdd {
     position: fixed;
-    top: 300px;
+    top: 550px;
     left: 525px;
     margin-left: 15px;
 }
+
+.btnEdit {
+    position: fixed;
+    top: 550px;
+    left: 400px;
+    margin-left: 15px;
+}
+
+.dropList1 {
+    position: fixed;
+    top: 50px;
+    left: 520px;
+    margin-left: 15px;
+}
+
+
 .btnBack {
     position: fixed;
-    top: 300px;
+    top: 550px;
     left: 575px;
     margin-left: 15px;
 }
